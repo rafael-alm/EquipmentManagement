@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="services\**" />
+    <EmbeddedResource Remove="services\**" />
+    <None Remove="services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="aggregates\supplier\validations\SupplierMessages.cs~RFd6ce4b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\equipmentManagement.domain.shared\equipmentManagement.domain.shared.csproj" />
+  </ItemGroup>
+
+</Project>

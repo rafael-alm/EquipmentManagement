@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>equipmentManagement.application.input</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\equipmentManagement.domain.shared\equipmentManagement.domain.shared.csproj" />
+    <ProjectReference Include="..\equipmentManagement.domain\equipmentManagement.domain.csproj" />
+  </ItemGroup>
+
+</Project>
