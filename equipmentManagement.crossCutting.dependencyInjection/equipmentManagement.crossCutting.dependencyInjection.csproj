@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="5.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\equipmentManagement.application.input\equipmentManagement.application.input.csproj" />
+    <ProjectReference Include="..\src\equipmentManagement.domain\equipmentManagement.domain.csproj" />
+    <ProjectReference Include="..\src\equipmentManagement.infra.data.input\equipmentManagement.infra.data.input.csproj" />
+  </ItemGroup>
+
+</Project>

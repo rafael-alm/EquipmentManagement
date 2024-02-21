@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
       <PrivateAssets>all</PrivateAssets>
@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\equipmentManagement.crossCutting.dependencyInjection\equipmentManagement.crossCutting.dependencyInjection.csproj" />
     <ProjectReference Include="..\equipmentManagement.application.input\equipmentManagement.application.input.csproj" />
     <ProjectReference Include="..\equipmentManagement.domain.shared\equipmentManagement.domain.shared.csproj" />
     <ProjectReference Include="..\equipmentManagement.infra.data.input\equipmentManagement.infra.data.input.csproj" />

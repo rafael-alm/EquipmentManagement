@@ -25,10 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="domain\services\product\validations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\equipmentManagement.tests.common\equipmentManagement.tests.common.csproj" />
   </ItemGroup>
 

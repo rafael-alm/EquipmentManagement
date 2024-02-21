@@ -1,15 +1,16 @@
-﻿using equipmentManagement.domain.aggregates.supplier.validations;
+﻿using equipmentManagement.domain.aggregates.company.validations;
+using equipmentManagement.domain.seedWork.objectValues;
 using equipmentManagement.domain.shared.seedWork.exceptions;
 using System.Text.RegularExpressions;
 
 namespace equipmentManagement.domain.objectValues
 {
-    public record CNPJ
+    public record struct CNPJ
     {
-        public CNPJ(string number)
+        private CNPJ(string number)
         {
             if (!IsValid(number))
-                throw new EntityValidationException(SupplierMessages.CNPJMustBeValid.Text);
+                throw new EntityValidationException("CNPJ deve ser valido.");
 
             Number = onlyNumber(number);
         }
@@ -18,8 +19,9 @@ namespace equipmentManagement.domain.objectValues
 
         public static bool IsValid(string number)
         {
-            //if (string.IsNullOrEmpty(numero))
-            //    return false;
+            if (string.IsNullOrEmpty(number))
+                return false;
+
             string cnpj = onlyNumber(number);
 
             if (cnpj.Length != 14)
@@ -75,7 +77,15 @@ namespace equipmentManagement.domain.objectValues
             return (CNPJOk[0] && CNPJOk[1]);
         }
 
+        public bool IsNullOrEmpty()
+            => string.IsNullOrEmpty(Number);
+
         private static string onlyNumber(string cnpj)
             => Regex.Replace(cnpj, "[^\\d]", string.Empty);
+
+        public static implicit operator string(CNPJ e) => e.Number;
+        public static implicit operator CNPJ(string id) => new (id);
+
+        public override string ToString() => Number;
     }
 }

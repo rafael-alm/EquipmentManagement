@@ -4,9 +4,9 @@ namespace equipmentManagement.infra.data.input
 {
     public class UnitOfWork : IDbContext
     {
-        private readonly ContextequipmentManagement context;
+        private readonly ContextEquipmentManagement context;
 
-        public UnitOfWork(ContextequipmentManagement context)
+        public UnitOfWork(ContextEquipmentManagement context)
             => this.context = context;
 
         Task IDbContext.Commit(CancellationToken cancellationToken)

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using equipmentManagement.application.output.dto.product;
+using equipmentManagement.application.output.dto.company;
 using equipmentManagement.application.output.interfaces;
 using equipmentManagement.application.output.seedWork;
 using equipmentManagement.Api.Output.Models;

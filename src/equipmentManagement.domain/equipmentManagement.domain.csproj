@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="aggregates\supplier\validations\SupplierMessages.cs~RFd6ce4b.TMP" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\equipmentManagement.domain.shared\equipmentManagement.domain.shared.csproj" />
   </ItemGroup>
 

@@ -6,8 +6,8 @@ namespace equipmentManagement.infra.data.input.seedWork
         where TModel : class
         where TId : struct
     {
-        protected readonly ContextequipmentManagement context;
+        protected readonly ContextEquipmentManagement context;
         protected Repository(IDbContext context)
-            => this.context = context as ContextequipmentManagement;
+            => this.context = context as ContextEquipmentManagement;
     }
 }

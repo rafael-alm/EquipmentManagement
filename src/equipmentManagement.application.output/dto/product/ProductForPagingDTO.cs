@@ -1,7 +1,7 @@
 ﻿using equipmentManagement.domain.shared.enumeration;
 using equipmentManagement.domain.shared.seedWork.enumeration;
 
-namespace equipmentManagement.application.output.dto.product
+namespace equipmentManagement.application.output.dto.company
 {
     public struct ProductForPagingDTO
     {

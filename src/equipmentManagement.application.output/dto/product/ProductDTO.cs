@@ -1,4 +1,4 @@
-﻿namespace equipmentManagement.application.output.dto.product
+﻿namespace equipmentManagement.application.output.dto.company
 {
     public struct ProductDTO
     {

@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using equipmentManagement.api.input.Configurations;
 using equipmentManagement.application.input.seedWork.repository;
 using equipmentManagement.infra.data.input;
-using equipmentManagement.infra.data.input.autoMapper;
-using equipmentManagement.tests.integration.common;
+using equipmentManagement.tests.common;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace equipmentManagement.tests.integration
 {
@@ -10,7 +10,7 @@ namespace equipmentManagement.tests.integration
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(ProductToProductModel));
+            services.AddAutoMapperConfiguration();
             services.AddDbContext<TestContextequipmentManagement>();
             services.AddScoped<IDbContext, UnitOfWork>();
         }

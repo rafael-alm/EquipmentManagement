@@ -1,4 +1,4 @@
-﻿using equipmentManagement.application.output.dto.product;
+﻿using equipmentManagement.application.output.dto.company;
 using equipmentManagement.application.output.interfaces;
 using equipmentManagement.application.output.seedWork;
 using equipmentManagement.infra.data.output.seedWork;
@@ -46,7 +46,7 @@ namespace equipmentManagement.infra.data.output.repositories
                 cancellationToken);
         }
 
-        async Task<ProductDTO> IReadProductRepository.GetByIdAsync(Guid productId, CancellationToken cancellationToken)
+        async Task<ProductDTO> IReadProductRepository.GetByIdAsync(Guid companyId, CancellationToken cancellationToken)
         {
             string query = @"SELECT [Id]
                                   , [SupplierId]
@@ -61,7 +61,7 @@ namespace equipmentManagement.infra.data.output.repositories
             return await GetRecord<ProductDTO>.SingleOrDefaultAsync(
                 factory,
                 query,
-                new { Id = productId.ToString() },
+                new { Id = companyId.ToString() },
                 x => new ProductDTO
                 {
                     Id = x.Id,

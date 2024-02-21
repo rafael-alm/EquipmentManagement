@@ -1,6 +1,6 @@
 ﻿using equipmentManagement.application.output.seedWork;
 
-namespace equipmentManagement.application.output.dto.product
+namespace equipmentManagement.application.output.dto.company
 {
     public struct ProductPaginationFilter : IFilterPaging
     {

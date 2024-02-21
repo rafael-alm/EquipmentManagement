@@ -7,7 +7,7 @@ namespace equipmentManagement.domain.shared.enumeration
         public StatusEntityEnum(int id, string name) : base(id, name) { }
 
         public static readonly StatusEntityEnum
-            Inactive = new StatusEntityEnum(0, "Inativo"),
-            Active = new StatusEntityEnum(1, "Ativo");
+            Inactive = new StatusEntityEnum(0, "InActive"),
+            Active = new StatusEntityEnum(1, "Active");
     }
 }

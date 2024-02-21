@@ -8,8 +8,8 @@ namespace equipmentManagement.domain.seedWork.aggregateHandler
     {
         protected readonly INotification notification;
 
-        protected AggregateHandler(INotification notificacao)
-            => this.notification = notificacao;
+        protected AggregateHandler(INotification notification)
+            => this.notification = notification;
 
         bool IAggregateHandler.Success => !notification.HasError;
         public INotification Notification => notification;
