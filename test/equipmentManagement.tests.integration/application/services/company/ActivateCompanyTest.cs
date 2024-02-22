@@ -2,7 +2,6 @@
 using equipmentManagement.application.input.services.company;
 using equipmentManagement.application.input.services.company.interfaces;
 using equipmentManagement.domain.aggregates.company.validations;
-using equipmentManagement.domain.seedWork.objectValues;
 using equipmentManagement.domain.shared.seedWork.exceptions;
 using equipmentManagement.infra.data.input.aggregates;
 using equipmentManagement.tests.common;
